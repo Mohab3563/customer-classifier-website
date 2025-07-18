@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Customer Classification</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
@@ -12,23 +13,25 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding-top: 60px;
+      padding: 40px 20px;
       min-height: 100vh;
       margin: 0;
     }
 
     h1 {
-      font-size: 32px;
+      font-size: 28px;
       text-shadow: 0 0 10px #00f0ff;
       margin-bottom: 20px;
+      text-align: center;
     }
 
     form {
       background: rgba(255, 255, 255, 0.05);
-      padding: 30px;
+      padding: 25px;
       border-radius: 12px;
       box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
-      width: 320px;
+      width: 100%;
+      max-width: 350px;
       backdrop-filter: blur(10px);
       border: 1px solid rgba(255, 255, 255, 0.1);
     }
@@ -38,6 +41,7 @@
       margin-top: 15px;
       font-weight: bold;
       color: #00f0ff;
+      font-size: 14px;
     }
 
     input {
@@ -48,6 +52,7 @@
       border: 1px solid #00f0ff;
       background-color: rgba(0, 0, 0, 0.4);
       color: #ffffff;
+      font-size: 16px;
     }
 
     input:focus {
@@ -79,6 +84,27 @@
       font-size: 18px;
       text-align: center;
       font-weight: bold;
+    }
+
+    /* Media Queries for Mobile Devices */
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 24px;
+      }
+
+      form {
+        padding: 20px;
+        width: 100%;
+      }
+
+      input, button {
+        font-size: 14px;
+        padding: 10px;
+      }
+
+      #result {
+        font-size: 16px;
+      }
     }
   </style>
 </head>
